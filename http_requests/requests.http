@@ -1,0 +1,16 @@
+### get opinion
+GET {{host}}/api/opinions/1/
+
+### get opinions
+GET {{host}}/api/opinions/
+
+### patch opinion
+PATCH {{host}}/api/opinions/27/
+Content-Type: application/json
+
+{
+  "title": "Test changed"
+}
+
+### delete opinion
+DELETE {{host}}/api/opinions/1/

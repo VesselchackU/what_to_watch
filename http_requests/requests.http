@@ -1,11 +1,14 @@
 ### get opinion
-GET {{host}}/api/opinions/1/
+GET {{host}}/api/opinions/30/
 
 ### get opinions
 GET {{host}}/api/opinions/
 
+### get random opinion
+GET {{host}}/api/get-random-opinion/
+
 ### patch opinion
-PATCH {{host}}/api/opinions/27/
+PATCH {{host}}/api/opinions/30/
 Content-Type: application/json
 
 {
@@ -13,4 +16,13 @@ Content-Type: application/json
 }
 
 ### delete opinion
-DELETE {{host}}/api/opinions/1/
+DELETE {{host}}/api/opinions/25/
+
+### add opinion
+POST {{host}}/api/opinions/
+Content-Type: application/json
+
+{
+  "titles": "Джой",
+  "texts": "Тест 01 Фильм обязателен к просмотру в ситуациях, когда кажется, что выхода нет, и всё летит в тартарары. Главная героиня придумала самоотжимающуюся швабру (невесть какое изобретение, казалось бы) и двигала свою идею всеми мыслимыми и немыслимыми путями. Да и актёрский состав интересен. Где ещё увидишь вместе Дженифер Лоуренс, Роберта де Ниро и Брэдли Купера."
+}
